@@ -1,0 +1,45 @@
+<script is:inline>
+    function applyTheme(theme) {
+        if (theme === 'dark') {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    }
+
+    function attachEvent(selector, event, fn) {
+        const matches = typeof selector === 'string' ? document.querySelectorAll(selector) : selector;
+        if (matches && matches.length) {
+            matches.forEach((elem) => {
+                elem.addEventListener(event, (e) => fn(e, elem), false);
+            });
+        }
+    }
+
+    window.onload = function () {
+        let lastKnownScrollPosition = window.scrollY;
+        let ticking = true;
+
+        function appyHeaderStylesOnScroll() {
+            const header = document.getElementById('header');
+            if (lastKnownScrollPosition > 60 && !header.classList.contains('scroll')) {
+                document.getElementById('header').classList.add('scroll');
+            } else if (lastKnownScrollPosition <= 60 && header.classList.contains('scroll')) {
+                document.getElementById('header').classList.remove('scroll');
+            }
+            ticking = false;
+        }
+        appyHeaderStylesOnScroll();
+
+        attachEvent([document], 'scroll', function () {
+            lastKnownScrollPosition = window.scrollY;
+
+            if (!ticking) {
+                window.requestAnimationFrame(() => {
+                    appyHeaderStylesOnScroll();
+                });
+                ticking = true;
+            }
+        });
+    };
+</script>

@@ -1,0 +1,40 @@
+---
+import ArrowUpIcon from "./Icons/ArrowUpIcon.astro";
+import PhoneIcon from "./Icons/PhoneIcon.astro";
+import EmailIcon from "./Icons/EmailIcon.astro";
+import logo from "../assets/images/logo.png";
+let currentYear: number = new Date().getFullYear();
+---
+
+<footer id="footer">
+    <div class="flex justify-around p-8">
+        <div>
+            <strong><p class="text-2xl mb-4">Adresse</p></strong>
+            <p class="text-sm md:text-lg lg:text-lg mb-2">Straße</p>
+            <p class="text-sm md:text-lg lg:text-lg">66606 Quierschied</p>
+        </div>
+        <div>
+            <a href="#" class="flex items-center">
+                <img id="logo" src={logo} alt="Logo" class="w-auto h-12 lg:h-16 mt-12"/>
+            </a>
+        </div>
+        <div>
+            <strong><p class="text-2xl mb-4">Kontakt</p></strong>
+            <div class="flex">
+                <EmailIcon/>
+                <p class="text-sm md:text-lg lg:text-lg mb-2">kreutzermaik123@web.de</p>
+            </div>
+            <div class="flex">
+                <PhoneIcon/>
+                <p class="text-sm md:text-lg lg:text-lg"><a href="tel:06825952604">06825 / 952604</a></p>
+            </div>
+        </div>
+    </div>
+
+    <div class="flex p-8">
+        <p class="mx-auto footerCopyright"> © {currentYear} Stuckateurbetrieb Kreutzer GmbH</p>
+        <div class="right-5 absolute"><a href="#">
+            <ArrowUpIcon/>
+        </a></div>
+    </div>
+</footer>

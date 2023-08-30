@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap');
+@import url(https://db.onlinewebfonts.com/c/977c0265c928af7b940ae8e9598b4079?family=Calibre-Light);
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body {
+    font-family: 'Calibre-Light', serif;
+}
+
+/**
+    add box-shadow to navbar when scrolling
+ */
+#header.scroll > nav:first-child {
+    box-shadow: 0 0.375rem 1.5rem #8c98a421;
+}
+
+nav a {
+    font-family: 'Inter', serif;
+}
+
+#about p, #leistungen p, #kontakt p {
+    font-size: 20px;
+}
+
+#footer {
+    background-color: #33373A;
+    color: #d3d0d0;
+}
+
+.footerCopyright {
+    color: #7D8083;
+}
