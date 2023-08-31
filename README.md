@@ -1,47 +1,30 @@
-# Astro Starter Kit: Minimal
+# Webseite für den Stuckateurbetrieb Kreutzer GmbH
 
-```
-npm create astro@latest -- --template minimal
-```
 
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/withastro/astro/tree/latest/examples/minimal)
-[![Open with CodeSandbox](https://assets.codesandbox.io/github/button-edit-lime.svg)](https://codesandbox.io/p/sandbox/github/withastro/astro/tree/latest/examples/minimal)
-[![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/withastro/astro?devcontainer_path=.devcontainer/minimal/devcontainer.json)
+> 👷‍♀️In dieser README wird die Architektur des Projektes erklärt
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 💻 Tech Stack
+- Die Basis bildet das Web-Framework [Astro](https://astro.build/)
+- Die Komponenten werden entsprechend mit JavaScript und HTML umgesetzt
+- Die Styles werden auf Basis von [TailwindCSS](https://tailwindcss.com/) geschrieben
 
-## 🚀 Project Structure
+## 🗂️ Übersicht über die Komponenten
+- Die Komponenten befinden sich im Ordner `./src/components/`
+- Diese werden in der Datei `./src/pages/index.astro` eingebunden
+- Als Wrapper für die Hauptseite dient das Layout `./src/layouts/Layout.astro`
+- Verwendete Icons werden als SVG-Tags im Ordner `./src/icons/` abgelegt
+- Der Ordner `utils` enthält die Datei `CustomStyles.astro`, welches als Template-Klasse für Tailwind dient sowie die Datei `BasicScripts.astro`, die die Navbar stylisch anpasst, sobald im Browser gescrollt wird
 
-Inside of your Astro project, you'll see the following folders and files:
+## ⌘ Commands
 
-```
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+| Command                   | Action                                             |
+| :------------------------ |:---------------------------------------------------|
+| `npm install`             | Abhängigkeiten installieren                        |
+| `npm run dev`             | Startet lokalen Server `localhost:3000`            |
+| `npm run build`           | Bauprozess für die Produktion zum Ordner `./dist/` |
+| `npm run preview`         | Vorschau der gebauten App vor Deploy               |
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
-
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
-
-Any static assets, like images, can be placed in the `public/` directory.
-
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
-
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:3000`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
-
-## 👀 Want to learn more?
-
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+## 🚀 Deployment
+- Die Webseite wird mit dem Tool [Netlify](https://www.netlify.com/) deployed
+- Das GitHub-Repository der Webseite ist mit einem Netlify-Konto verknüpft
+- Wird ein neuer Commit auf den `master`-Branch gepusht, wird die Webseite automatisch neu gebaut und deployed
