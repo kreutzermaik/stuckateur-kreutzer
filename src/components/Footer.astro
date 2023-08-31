@@ -10,10 +10,10 @@ let currentYear: number = new Date().getFullYear();
     <div class="flex justify-around p-8">
         <div>
             <strong><p class="text-2xl mb-4">Adresse</p></strong>
-            <p class="text-sm md:text-lg lg:text-lg mb-2">Hauptstrasse 182</p>
-            <p class="text-sm md:text-lg lg:text-lg">66287 Quierschied</p>
+            <p class="text-md md:text-lg lg:text-lg mb-2">Hauptstrasse 182</p>
+            <p class="text-md md:text-lg lg:text-lg">66287 Quierschied</p>
         </div>
-        <div>
+        <div class="hidden lg:block">
             <a href="#" class="flex items-center">
                 <img id="logo" src={logo} alt="Logo" class="w-auto h-12 lg:h-16 mt-12"/>
             </a>
@@ -22,11 +22,11 @@ let currentYear: number = new Date().getFullYear();
             <strong><p class="text-2xl mb-4">Kontakt</p></strong>
             <div class="flex">
                 <EmailIcon/>
-                <p class="text-sm md:text-lg lg:text-lg mb-2">kreutzermaik123@web.de</p>
+                <p class="text-md md:text-lg lg:text-lg mb-2">kreutzermaik123@web.de</p>
             </div>
             <div class="flex">
                 <PhoneIcon/>
-                <p class="text-sm md:text-lg lg:text-lg"><a href="tel:06825952604">06825 / 952604</a></p>
+                <p class="text-md md:text-lg lg:text-lg"><a href="tel:06825952604">06825 / 952604</a></p>
             </div>
         </div>
     </div>
