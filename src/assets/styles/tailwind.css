@@ -34,9 +34,3 @@ nav a {
 .footerCopyright {
     color: #7D8083;
 }
-
-@media only screen and (max-width: 600px) {
-    #about p, #leistungen p, #kontakt p {
-        font-size: 4vw !important;
-    }
-}
