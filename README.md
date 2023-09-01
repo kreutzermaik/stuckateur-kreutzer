@@ -1,5 +1,6 @@
 # Webseite für den Stuckateurbetrieb Kreutzer GmbH
 
+> 🌐 Webseite: [https://stuckateur-kreutzer.de/](https://stuckateur-kreutzer.de/)
 
 > 👷‍♀️In dieser README wird die Architektur des Projektes erklärt
 
@@ -28,3 +29,15 @@
 - Die Webseite wird mit dem Tool [Netlify](https://www.netlify.com/) deployed
 - Das GitHub-Repository der Webseite ist mit einem Netlify-Konto verknüpft
 - Wird ein neuer Commit auf den `master`-Branch gepusht, wird die Webseite automatisch neu gebaut und deployed
+
+## 📈 Performance Score
+Mit dem Tool Lighthouse von Google wurde die Performance der Webseite gemessen:
+
+![img.png](img.png)
+
+## 📝 License
+[MIT](https://choosealicense.com/licenses/mit/)
+
+## 📧 Kontakt
+- [GitHub](https://github.com/kreutzermaik)
+- [LinkedIn](https://linkedin.com/in/maik-kreutzer-889a79197)
