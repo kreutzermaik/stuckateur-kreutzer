@@ -1,6 +1,6 @@
 # Webseite für den Stuckateurbetrieb Kreutzer GmbH
 
-> 🌐 Webseite: [https://stuckateur-kreutzer.de/](https://stuckateur-kreutzer.de/)
+> 🌐 Webseite: [https://stuckateur-kreutzer.netlify.app/](https://stuckateur-kreutzer.netlify.app)
 
 > 👷‍♀️In dieser README wird die Architektur des Projektes erklärt
 
